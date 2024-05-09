@@ -1,0 +1,1486 @@
+body.classic, body.aden, body.class {
+  background-color: #f3c7c4;
+}
+
+body.race {
+  background-color: #f5efe7;
+}
+
+body.classic .section-contents, body.aden .section-contents, body.race .section-contents, body.class .section-contents {
+  padding: 0;
+}
+
+body.classic .bottom-footer, body.classic #nctFooter, body.aden .bottom-footer, body.aden #nctFooter, body.race .bottom-footer, body.race #nctFooter, body.class .bottom-footer, body.class #nctFooter {
+  display: none !important;
+}
+
+body .section-footer {
+  position: relative;
+  width: 100%;
+  height: 5.5em;
+  font-size: 12px;
+  line-height: 5.5em;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: #7e3631;
+}
+
+@media (min-width: 960px) {
+  body .section-footer {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    margin-top: 0;
+    border-top: none;
+  }
+}
+
+@media (min-width: 960px) {
+  body.classic .section-footer {
+    position: relative;
+  }
+}
+
+.tab-nav-wrap {
+  top: 56px;
+  left: 0;
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
+}
+
+@media (min-width: 960px) {
+  .tab-nav-wrap {
+    bottom: 8%;
+    left: 0;
+    position: fixed;
+    top: auto;
+    overflow: visible;
+  }
+}
+
+.tab-nav {
+  position: relative;
+}
+
+.tab-nav.tab-aden, .tab-nav.tab-class {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 960px) {
+  .tab-nav.tab-aden, .tab-nav.tab-class {
+    border: none;
+  }
+}
+
+.tab-nav.tab-race {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/race/tab_bg.png") 0 0 no-repeat;
+  background-size: 100%;
+}
+
+@media (min-width: 960px) {
+  .tab-nav.tab-race {
+    border: none;
+    background: none;
+  }
+}
+
+.tab-nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.tab-nav li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  line-height: 48px;
+  color: #3e3e3e;
+  text-align: center;
+  text-decoration: none;
+}
+
+.tab-nav li a:hover {
+  color: #666;
+}
+
+.tab-nav li a.active {
+  color: #772b2b;
+}
+
+.tab-nav li a span {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.tab-nav #mCSB_1_scrollbar_horizontal {
+  opacity: 0;
+}
+
+@media (min-width: 960px) {
+  .tab-nav {
+    width: 100%;
+    text-align: center;
+    border-bottom: none;
+    background-color: transparent;
+  }
+  .tab-nav li {
+    display: inline-block;
+    margin: 0 18px;
+    padding: 15px 0;
+  }
+  .tab-nav li a {
+    width: 73px;
+    height: 73px;
+    position: relative;
+    display: block;
+    line-height: 73px;
+    color: #28100f;
+    text-align: center;
+    overflow: hidden;
+    transition: all .2s;
+    transform: rotate(45deg);
+  }
+  .tab-nav li a:before {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 73px;
+    height: 73px;
+    z-index: 0;
+    content: '';
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .tab-nav li a:after {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 73px;
+    height: 73px;
+    z-index: 1;
+    content: '';
+    border: 1px solid white;
+    background-color: #e48883;
+    transform: translateX(-100%) translateY(100%);
+    transition: all .25s;
+  }
+  .tab-nav li a:hover {
+    color: #28100f;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .tab-nav li a.active {
+    color: white;
+  }
+  .tab-nav li a.active:after {
+    transform: translateX(0) translateY(0);
+  }
+  .tab-nav li a span {
+    position: relative;
+    z-index: 2;
+    display: block;
+    transform: rotate(-45deg);
+  }
+  .tab-nav li:first-child a span {
+    letter-spacing: -1.5px;
+  }
+}
+
+.scroll-icon {
+  width: 41.6px;
+  height: 28px;
+  margin: 0 auto;
+  background: url("../image/btn_scroll1.png") 50% 0 no-repeat;
+  background-size: 41.6px 28px;
+}
+
+@media (min-width: 960px) {
+  .scroll-icon {
+    width: 52px;
+    height: 35px;
+    background-size: 52px 35px;
+  }
+}
+
+@media (min-width: 960px) {
+  .scene-light {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+    background: url("../image/bg_repeat_light.png") 0 0;
+  }
+}
+
+.section {
+  overflow: hidden;
+}
+
+.section .container {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 960px) {
+  .section .container {
+    width: auto;
+    height: auto;
+  }
+}
+
+.section .info {
+  position: relative;
+  margin: 0;
+  padding: 0 1.5em 6em;
+  z-index: 9;
+  text-align: center;
+}
+
+@media (min-width: 960px) {
+  .section .info {
+    padding-top: 0;
+  }
+}
+
+.section .info.classic-info {
+  padding-top: 75%;
+  padding-bottom: 0;
+}
+
+@media (min-width: 960px) {
+  .section .info.classic-info {
+    margin-top: 20%;
+    padding: 0;
+  }
+}
+
+.section .info.classic-info img:first-child {
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .section .info.classic-info img:first-child {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 960px) {
+  .section .info.classic-info img:last-child {
+    display: none;
+  }
+}
+
+.section .info.classic-info a.btn {
+  padding: 15px 0;
+  width: 180px;
+  margin: 50px auto 80px;
+  background: rgba(255, 255, 255, 0.5);
+  color: #772b2b;
+  display: block;
+}
+
+.section .info.classic-info a:hover {
+  color: white;
+  background: #e48883;
+  text-decoration: none;
+}
+
+.section .info.aden-info {
+  padding-top: 65%;
+  padding-bottom: 0;
+}
+
+@media (min-width: 960px) {
+  .section .info.aden-info {
+    margin-top: -5%;
+    padding: 0;
+  }
+}
+
+.section .info.aden-info img:first-child {
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .section .info.aden-info img:first-child {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 960px) {
+  .section .info.aden-info img:last-child {
+    display: none;
+  }
+}
+
+.section .info.race-info {
+  padding-top: 115%;
+}
+
+@media (min-width: 960px) {
+  .section .info.race-info {
+    margin-top: -15%;
+    margin-left: auto;
+    padding: 0;
+  }
+}
+
+.section .info.class-info {
+  padding-top: 115%;
+}
+
+@media (min-width: 960px) {
+  .section .info.class-info {
+    margin-top: -8%;
+    margin-left: 50px;
+    padding: 0;
+  }
+}
+
+.section .info h1, .section .info h2, .section .info h3 {
+  letter-spacing: -0.05em;
+}
+
+.section .info p {
+  letter-spacing: -0.025em;
+}
+
+.section .info br {
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .section .info br {
+    display: block;
+  }
+}
+
+.parallax {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: translateY(0);
+  transition: all .7s;
+}
+
+.parallax.is-active {
+  transform: translateY(0);
+}
+
+.parallax.is-up {
+  transform: translateY(500px);
+}
+
+.parallax.is-down {
+  transform: translateY(-500px);
+}
+
+.classic-cover-bg {
+  top: 56px;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .classic-cover-bg {
+    top: 40px;
+    left: 0;
+    position: fixed;
+    display: block;
+  }
+}
+
+.classic-cover-bg .cover-bg1 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+@media (min-width: 960px) {
+  .classic-cover-bg .cover-bg1 {
+    background: url("../image/cover_bg11.jpg") 50% 0 no-repeat;
+    background-size: 1920px auto;
+  }
+}
+
+.classic-cover-bg .cover-bg2 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+@media (min-width: 960px) {
+  .classic-cover-bg .cover-bg2 {
+    background: url("../image/cover_bg21.png") 50% 130% no-repeat;
+    background-size: 1920px auto;
+  }
+}
+
+.aden-cover-bg {
+  top: 56px;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .aden-cover-bg {
+    top: 40px;
+    left: 0;
+    position: fixed;
+    display: block;
+  }
+}
+
+.aden-cover-bg .cover-bg1 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+@media (min-width: 960px) {
+  .aden-cover-bg .cover-bg1 {
+    background: url("../image/cover_bg12.jpg") 50% 0 no-repeat;
+    background-size: 1920px auto;
+  }
+}
+
+.aden-cover-bg .cover-bg2 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+@media (min-width: 960px) {
+  .aden-cover-bg .cover-bg2 {
+    background: url("../image/cover_bg21.png") 50% 130% no-repeat;
+    background-size: 1920px auto;
+  }
+}
+
+@keyframes adenShot {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.section-classic, .section-aden {
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.classic1 {
+  background-image: url("../image/classic1_bg_m.jpg");
+}
+
+@media (min-width: 960px) {
+  .classic1 {
+    background-image: none;
+  }
+}
+
+.aden1 {
+  background-image: url("../image/aden1_bg_m.jpg");
+}
+
+@media (min-width: 960px) {
+  .aden1 {
+    background-image: none;
+  }
+}
+
+.aden2 {
+  background-image: url("../image/aden2_bg_m.jpg");
+}
+
+@media (min-width: 960px) {
+  .aden2 {
+    background-image: url("../image/cover_bg12.jpg");
+  }
+}
+
+/*.aden3{
+	background-image: url($static-path + "intro/aden/aden3_bg_m.jpg");
+	@include breakpoint(nb){
+		background-image: url($static-path + "intro/aden/cover_bg1.jpg");
+	}
+}*/
+.aden3 {
+  background-image: url("../image/aden4_bg_m.jpg");
+}
+
+@media (min-width: 960px) {
+  .aden3 {
+    background-image: url("../image/cover_bg12.jpg");
+  }
+}
+
+.aden4 {
+  background-image: url("../image/aden5_bg_m.jpg");
+}
+
+@media (min-width: 960px) {
+  .aden4 {
+    background-image: url("../image/cover_bg12.jpg");
+  }
+}
+
+/*.aden6{
+	background-image: url($static-path + "intro/aden/aden6_bg_m.jpg");
+	@include breakpoint(nb){
+		background-image: url($static-path + "intro/aden/cover_bg1.jpg");
+	}
+}*/
+.classic-title, .aden-title {
+  margin-bottom: 20px;
+  font-size: 0;
+}
+
+.classic-title img, .aden-title img {
+  max-width: 90%;
+}
+
+@media (min-width: 960px) {
+  .classic-bg1 {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: url("../image/classic_bg.png") center -100px no-repeat;
+    background-size: 100% auto;
+  }
+}
+
+@media (min-width: 960px) {
+  .section.section-classic .classic-char1 {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 47%;
+    height: 100%;
+    z-index: 1;
+    background: url("../image/classic1_char1.png") -150px top no-repeat;
+    background-size: 100% auto;
+  }
+}
+
+@media (min-width: 960px) {
+  .aden-bg1 {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: url("../image/cover_bg21.png") center bottom no-repeat;
+    background-size: 100% auto;
+  }
+}
+
+@media (min-width: 960px) {
+  .section.section-aden .aden-char1 {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 47%;
+    height: 100%;
+    z-index: 1;
+    background-size: 100% auto;
+  }
+}
+
+@media (min-width: 960px) {
+  .aden2 .aden-char1 {
+    background: url("../image/aden2_char1.png") left top no-repeat;
+  }
+}
+
+/*.aden3{
+	.aden-char1{
+		@include breakpoint(nb){
+			background: url($static-path + "intro/aden/aden3_char1.png") left top no-repeat;
+		}
+	}
+}*/
+@media (min-width: 960px) {
+  .aden3 .aden-char1 {
+    background: url("../image/aden4_char1.png") left top no-repeat;
+  }
+}
+
+@media (min-width: 960px) {
+  .aden4 .aden-char1 {
+    background: url("../image/aden5_char1.png") left top no-repeat;
+  }
+}
+
+@media (min-width: 960px) {
+  .section-race .race-bg {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/race/race_bg.jpg") 50% 0 no-repeat;
+  }
+}
+
+.section-race .scene-dark {
+  opacity: .2;
+}
+
+@media (min-width: 960px) {
+  .race-info {
+    max-width: 600px;
+    margin-left: auto;
+  }
+}
+
+.race-info .race-title, .race-info .race-s-title, .race-info .race-desc {
+  color: #712d2c;
+}
+
+.race-info .race-title {
+  margin-bottom: 10px;
+}
+
+.race-info .race-s-title {
+  margin-bottom: 20px;
+}
+
+.race-info .race-desc p {
+  font-size: 0.9375em;
+  line-height: 1.7;
+  text-align: left;
+}
+
+@media (min-width: 960px) {
+  .race-info .race-desc p {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+.race-title {
+  line-height: 0;
+}
+
+.race-title img {
+  max-width: 60%;
+}
+
+@media (min-width: 960px) {
+  .race-title img {
+    max-width: 100%;
+  }
+}
+
+.race-char {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.human .race-char {
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/race/bg_human_m.jpg") 50% 0 no-repeat;
+  background-size: 100% auto;
+}
+
+@media (min-width: 960px) {
+  .human .race-char {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/race/char_human.png") 50% 0 no-repeat;
+    background-size: 1920px auto;
+  }
+}
+
+.elf .race-char {
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/race/bg_elf_m.jpg") 50% 0 no-repeat;
+  background-size: 100% auto;
+}
+
+@media (min-width: 960px) {
+  .elf .race-char {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/race/char_elf.png") 50% 0 no-repeat;
+    background-size: 1920px auto;
+  }
+}
+
+.darkelf .race-char {
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/race/bg_darkelf_m.jpg") 50% 0 no-repeat;
+  background-size: 100% auto;
+}
+
+@media (min-width: 960px) {
+  .darkelf .race-char {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/race/char_darkelf.png") 50% 0 no-repeat;
+    background-size: 1920px auto;
+  }
+}
+
+.orc .race-char {
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/race/bg_orc_m.jpg") 50% 0 no-repeat;
+  background-size: 100% auto;
+}
+
+@media (min-width: 960px) {
+  .orc .race-char {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/race/char_orc.png") 50% 0 no-repeat;
+    background-size: 1920px auto;
+  }
+}
+
+.dwarf .race-char {
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/race/bg_dwarf_m.jpg") 50% 0 no-repeat;
+  background-size: 100% auto;
+}
+
+@media (min-width: 960px) {
+  .dwarf .race-char {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/race/char_dwarf.png") 50% 0 no-repeat;
+    background-size: 1920px auto;
+  }
+}
+
+.kamael .race-char {
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/race/bg_kamael_m.jpg") 50% 0 no-repeat;
+  background-size: 100% auto;
+}
+
+@media (min-width: 960px) {
+  .kamael .race-char {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/race/char_kamael.png") 50% 0 no-repeat;
+    background-size: 1920px auto;
+  }
+}
+
+.ertheia .race-char {
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/race/bg_ertheia_m.jpg") 50% 0 no-repeat;
+  background-size: 100% auto;
+}
+
+@media (min-width: 960px) {
+  .ertheia .race-char {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/race/char_ertheia.png") 50% 0 no-repeat;
+    background-size: 1920px auto;
+  }
+}
+
+@media (min-width: 960px) {
+  .class-info {
+    max-width: 500px;
+    padding-left: 50px;
+  }
+}
+
+.class-info .class-title, .class-info .class-s-title, .class-info .class-desc {
+  color: #f5e7e7;
+  text-align: left;
+}
+
+.class-info .class-title {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.class-info .class-title:before {
+  width: 0;
+  height: 3px;
+  content: "";
+  display: block;
+  margin-bottom: 12px;
+  background-color: #e5aba8;
+  transition: all .6s;
+}
+
+.class-info .class-title.is-active:before {
+  width: 64px;
+  height: 3px;
+}
+
+.class-info .class-s-title {
+  margin-bottom: 25px;
+  opacity: .7;
+}
+
+@media (min-width: 960px) {
+  .class-info .class-s-title {
+    margin-bottom: 35px;
+  }
+}
+
+.class-info .class-desc p {
+  margin-bottom: 25px;
+  font-size: 0.9375em;
+  opacity: .7;
+}
+
+@media (min-width: 960px) {
+  .class-info .class-desc p {
+    font-size: 17px;
+  }
+}
+
+@keyframes classTitleLine {
+  0 {
+    width: 0;
+  }
+  100% {
+    width: 64px;
+  }
+}
+
+.class-char {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.class1 .class-bg {
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/bg_class1_m.jpg") 50% 0 no-repeat;
+  background-size: 100% auto;
+}
+
+@media (min-width: 960px) {
+  .class1 .class-bg {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/bg_class1.jpg") 50% 0 no-repeat;
+  }
+}
+
+.class1 .class-char {
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/bg_class1_m.jpg") 50% 0 no-repeat;
+  background-size: 100% auto;
+}
+
+@media (min-width: 960px) {
+  .class1 .class-char {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/char_class1.png") 50% 0 no-repeat;
+    background-size: 1920px auto;
+  }
+}
+
+.class2 .class-bg {
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/bg_class2_m.jpg") 50% 0 no-repeat;
+  background-size: 100% auto;
+}
+
+@media (min-width: 960px) {
+  .class2 .class-bg {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/bg_class2.jpg") 50% 0 no-repeat;
+  }
+}
+
+.class2 .class-char {
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/bg_class2_m.jpg") 50% 0 no-repeat;
+  background-size: 100% auto;
+}
+
+@media (min-width: 960px) {
+  .class2 .class-char {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/char_class2.png") 50% 0 no-repeat;
+    background-size: 1920px auto;
+  }
+}
+
+.class3 .class-bg {
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/bg_class3_m.jpg") 50% 0 no-repeat;
+  background-size: 100% auto;
+}
+
+@media (min-width: 960px) {
+  .class3 .class-bg {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/bg_class3.jpg") 50% 0 no-repeat;
+  }
+}
+
+.class3 .class-char {
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/bg_class3_m.jpg") 50% 0 no-repeat;
+  background-size: 100% auto;
+}
+
+@media (min-width: 960px) {
+  .class3 .class-char {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/char_class3.png") 50% 0 no-repeat;
+    background-size: 1920px auto;
+  }
+}
+
+.class4 .class-bg {
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/bg_class4_m.jpg") 50% 0 no-repeat;
+  background-size: 100% auto;
+}
+
+@media (min-width: 960px) {
+  .class4 .class-bg {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/bg_class4.jpg") 50% 0 no-repeat;
+  }
+}
+
+.class4 .class-char {
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/bg_class4_m.jpg") 50% 0 no-repeat;
+  background-size: 100% auto;
+}
+
+@media (min-width: 960px) {
+  .class4 .class-char {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/char_class4.png") 50% 0 no-repeat;
+    background-size: 1920px auto;
+  }
+}
+
+.class5 .class-bg {
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/bg_class5_m.jpg") 50% 0 no-repeat;
+  background-size: 100% auto;
+}
+
+@media (min-width: 960px) {
+  .class5 .class-bg {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/bg_class5.jpg") 50% 0 no-repeat;
+  }
+}
+
+.class5 .class-char {
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/bg_class5_m.jpg") 50% 0 no-repeat;
+  background-size: 100% auto;
+}
+
+@media (min-width: 960px) {
+  .class5 .class-char {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/char_class5.png") 50% 0 no-repeat;
+    background-size: 1920px auto;
+  }
+}
+
+.class6 .class-bg {
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/bg_class6_m.jpg") 50% 0 no-repeat;
+  background-size: 100% auto;
+}
+
+@media (min-width: 960px) {
+  .class6 .class-bg {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/bg_class6.jpg") 50% 0 no-repeat;
+  }
+}
+
+.class6 .class-char {
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/bg_class6_m.jpg") 50% 0 no-repeat;
+  background-size: 100% auto;
+}
+
+@media (min-width: 960px) {
+  .class6 .class-char {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/char_class6.png") 50% 0 no-repeat;
+    background-size: 1920px auto;
+  }
+}
+
+.class7 .class-bg {
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/bg_class7_m.jpg") 50% 0 no-repeat;
+  background-size: 100% auto;
+}
+
+@media (min-width: 960px) {
+  .class7 .class-bg {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/bg_class7.jpg") 50% 0 no-repeat;
+  }
+}
+
+.class7 .class-char {
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/bg_class7_m.jpg") 50% 0 no-repeat;
+  background-size: 100% auto;
+}
+
+@media (min-width: 960px) {
+  .class7 .class-char {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/char_class7.png") 50% 0 no-repeat;
+    background-size: 1920px auto;
+  }
+}
+
+.class8 .class-bg {
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/bg_class8_m.jpg") 50% 0 no-repeat;
+  background-size: 100% auto;
+}
+
+@media (min-width: 960px) {
+  .class8 .class-bg {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/bg_class8.jpg") 50% 0 no-repeat;
+  }
+}
+
+.class8 .class-char {
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/bg_class8_m.jpg") 50% 0 no-repeat;
+  background-size: 100% auto;
+}
+
+@media (min-width: 960px) {
+  .class8 .class-char {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/char_class8.png") 50% 0 no-repeat;
+    background-size: 1920px auto;
+  }
+}
+
+.class9 .class-bg {
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/bg_class9_m.jpg") 50% 0 no-repeat;
+  background-size: 100% auto;
+}
+
+@media (min-width: 960px) {
+  .class9 .class-bg {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/bg_class9.jpg") 50% 0 no-repeat;
+  }
+}
+
+.class9 .class-char {
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/bg_class9_m.jpg") 50% 0 no-repeat;
+  background-size: 100% auto;
+}
+
+@media (min-width: 960px) {
+  .class9 .class-char {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/class/char_class9.png") 50% 0 no-repeat;
+    background-size: 1920px auto;
+  }
+}
+
+.gallery-list li {
+  width: 49.15254%;
+  float: left;
+  margin-bottom: 1.69492%;
+}
+
+.gallery-list li:nth-child(2n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
+}
+
+.gallery-list li:nth-child(2n + 2) {
+  margin-left: 50.84746%;
+  margin-right: -100%;
+  clear: none;
+}
+
+@media (min-width: 600px) {
+  .gallery-list li {
+    width: 32.20339%;
+    float: left;
+  }
+  .gallery-list li:nth-child(3n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  .gallery-list li:nth-child(3n + 2) {
+    margin-left: 33.89831%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .gallery-list li:nth-child(3n + 3) {
+    margin-left: 67.79661%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+
+@media (min-width: 960px) {
+  .gallery-list li {
+    width: 23.72881%;
+    float: left;
+    margin-bottom: 23px;
+  }
+  .gallery-list li:nth-child(4n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  .gallery-list li:nth-child(4n + 2) {
+    margin-left: 25.42373%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .gallery-list li:nth-child(4n + 3) {
+    margin-left: 50.84746%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .gallery-list li:nth-child(4n + 4) {
+    margin-left: 76.27119%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+
+.gallery-list li a {
+  position: relative;
+  display: block;
+  line-height: 0;
+  outline: 0;
+  overflow: hidden;
+}
+
+.gallery-list li a:before {
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .gallery-list li a:before {
+    top: 120%;
+    left: 50%;
+    position: absolute;
+    z-index: 2;
+    display: block;
+    margin: -20px 0 0 -20px;
+    font-size: 40px;
+    color: #f5e7e7;
+    opacity: 0;
+    transition: all .3s;
+  }
+  .gallery-list li a:after {
+    top: 100%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all .2s;
+  }
+  .gallery-list li a:hover:before {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    opacity: 1;
+  }
+  .gallery-list li a:hover:after {
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 1;
+  }
+}
+
+.gallery-list li a img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 960px) {
+  .gallery-list li a img {
+    width: 298px;
+    height: 200px;
+  }
+}
+
+.gallery-btns {
+  padding-top: 4px;
+  text-align: center;
+}
+
+@media (min-width: 960px) {
+  .gallery-btns {
+    text-align: left;
+  }
+}
+
+.gallery-btns .btn-sm {
+  margin: 0 2px;
+}
+
+.wrap-header-update {
+  width: 100%;
+  height: 550px;
+  display: table;
+  text-align: center;
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/update/header_bg_salvation_m.jpg") 50% 0 no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 600px) {
+  .wrap-header-update {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/update/header_bg_salvation.jpg") 50% 0 no-repeat;
+  }
+}
+
+.wrap-header-update .update-info {
+  display: table-cell;
+  padding: 0 1em 15%;
+  vertical-align: bottom;
+}
+
+@media (min-width: 600px) {
+  .wrap-header-update .update-info {
+    vertical-align: middle;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 960px) {
+  .wrap-header-update .update-info {
+    padding-top: 60px;
+  }
+}
+
+.wrap-header-update .update-info .date, .wrap-header-update .update-info .title, .wrap-header-update .update-info .desc {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.wrap-header-update .update-info .date {
+  display: block;
+  margin-bottom: 10px;
+  letter-spacing: -0.02em;
+}
+
+.wrap-header-update .update-info .title {
+  margin-bottom: 15px;
+}
+
+.wrap-header-update .update-info .desc {
+  margin-bottom: 30px;
+}
+
+.wrap-header-update .btn-outline {
+  color: #f5e7e7;
+}
+
+@media (min-width: 600px) {
+  .wrap-header-update .btn-outline {
+    min-width: 156px;
+  }
+}
+
+.section-contents-update {
+  padding-top: 0;
+}
+
+@media (min-width: 600px) {
+  .section-contents-update {
+    padding-top: 55px;
+  }
+}
+
+.update-list .list-item {
+  position: relative;
+  height: 445px;
+}
+
+@media (min-width: 600px) {
+  .update-list .list-item {
+    width: 49.15254%;
+    float: left;
+    margin-bottom: 26px;
+  }
+  .update-list .list-item:nth-child(2n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  .update-list .list-item:nth-child(2n + 2) {
+    margin-left: 50.84746%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+
+@media (min-width: 960px) {
+  .update-list .list-item {
+    width: 32.20339%;
+    float: left;
+  }
+  .update-list .list-item:nth-child(3n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  .update-list .list-item:nth-child(3n + 2) {
+    margin-left: 33.89831%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .update-list .list-item:nth-child(3n + 3) {
+    margin-left: 67.79661%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+
+.update-list .list-item .info {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  padding: 1.5em;
+}
+
+@media (min-width: 960px) {
+  .update-list .list-item .info {
+    padding: 30px 40px;
+  }
+}
+
+.update-list .list-item .info .date, .update-list .list-item .info .title, .update-list .list-item .info .desc {
+  color: #3e3e3e;
+}
+
+.update-list .list-item .info .date {
+  display: block;
+  margin-bottom: 3px;
+  letter-spacing: -0.02em;
+}
+
+.update-list .list-item .info .title {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.update-list .list-item .info .desc {
+  max-width: 100%;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 15px;
+}
+
+.update-list .wrap-btn {
+  width: 100%;
+}
+
+.update-list .wrap-btn:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.update-list [class*="btn-"] {
+  width: 49.15254%;
+  float: left;
+}
+
+.update-list [class*="btn-"]:nth-child(2n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
+}
+
+.update-list [class*="btn-"]:nth-child(2n + 2) {
+  margin-left: 50.84746%;
+  margin-right: -100%;
+  clear: none;
+}
+
+.force {
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/update/card_force.jpg") 50% 0 no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 960px) {
+  .force {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/update/card_force.jpg") 50% 0 no-repeat;
+    background-size: 405px auto;
+  }
+}
+
+.helios {
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/update/card_helios.jpg") 50% 0 no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 960px) {
+  .helios {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/update/card_helios.jpg") 50% 0 no-repeat;
+    background-size: 405px auto;
+  }
+}
+
+.ertheia {
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/update/card_ertheia.jpg") 50% 0 no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 960px) {
+  .ertheia {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/update/card_ertheia.jpg") 50% 0 no-repeat;
+    background-size: 405px auto;
+  }
+}
+
+.lindvior {
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/update/card_lindvior.jpg") 50% 0 no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 960px) {
+  .lindvior {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/update/card_lindvior.jpg") 50% 0 no-repeat;
+    background-size: 405px auto;
+  }
+}
+
+.tauti {
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/update/card_tauti.jpg") 50% 0 no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 960px) {
+  .tauti {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/update/card_tauti.jpg") 50% 0 no-repeat;
+    background-size: 405px auto;
+  }
+}
+
+.awakening {
+  background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/update/card_awakening.jpg") 50% 0 no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 960px) {
+  .awakening {
+    background: url("https://image.tw.ncsoft.com/lineage2/classic/intro/update/card_awakening.jpg") 50% 0 no-repeat;
+    background-size: 405px auto;
+  }
+}
